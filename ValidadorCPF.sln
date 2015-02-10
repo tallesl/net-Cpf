@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidadorCPF", "ValidadorCPF\ValidadorCPF.csproj", "{A909F0B6-713A-45E0-88D4-B34C78E8B58C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidadorCPF.Teste", "ValidadorCPF.Teste\ValidadorCPF.Teste.csproj", "{65E08FCA-B056-4EDD-9A59-252752A280FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A909F0B6-713A-45E0-88D4-B34C78E8B58C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A909F0B6-713A-45E0-88D4-B34C78E8B58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A909F0B6-713A-45E0-88D4-B34C78E8B58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A909F0B6-713A-45E0-88D4-B34C78E8B58C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65E08FCA-B056-4EDD-9A59-252752A280FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65E08FCA-B056-4EDD-9A59-252752A280FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65E08FCA-B056-4EDD-9A59-252752A280FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65E08FCA-B056-4EDD-9A59-252752A280FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
