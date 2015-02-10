@@ -1,7 +1,7 @@
 # Validador CPF
 
-[![build](https://ci.appveyor.com/api/projects/status/github/tallesl/ValidacaoCPF)](https://ci.appveyor.com/project/TallesL/ValidacaoCPF)
-[![nuget package](https://badge.fury.io/nu/ValidacaoCPF.png)](http://badge.fury.io/nu/ValidacaoCPF)
+[![build](https://ci.appveyor.com/api/projects/status/ryvx5c1l0pgoesn9)](https://ci.appveyor.com/project/TallesL/validadorcpf)
+[![nuget package](https://badge.fury.io/nu/ValidadorCPF.png)](http://badge.fury.io/nu/ValidadorCPF)
 
 *Performs a digit check on Brazilian Individual Taxpayer Registry ([CPF](http://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas)).*
 
