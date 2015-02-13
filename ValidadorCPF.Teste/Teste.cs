@@ -29,25 +29,25 @@ namespace ValidacaoCPF.Teste
         [TestMethod]
         public void ValidoComMascara()
         {
-            Assert.IsTrue(ValidadorCPF.Valido("00030822106"));
-            Assert.IsTrue(ValidadorCPF.Valido("01007726172"));
-            Assert.IsTrue(ValidadorCPF.Valido("02049232128"));
-            Assert.IsTrue(ValidadorCPF.Valido("03032972124"));
-            Assert.IsTrue(ValidadorCPF.Valido("04040294181"));
-            Assert.IsTrue(ValidadorCPF.Valido("05113140864"));
-            Assert.IsTrue(ValidadorCPF.Valido("06000614187"));
-            Assert.IsTrue(ValidadorCPF.Valido("07004133320"));
-            Assert.IsTrue(ValidadorCPF.Valido("08085626730"));
-            Assert.IsTrue(ValidadorCPF.Valido("09006315621"));
-            Assert.IsTrue(ValidadorCPF.Valido("10020489153"));
-            Assert.IsTrue(ValidadorCPF.Valido("20041594134"));
-            Assert.IsTrue(ValidadorCPF.Valido("30051754134"));
-            Assert.IsTrue(ValidadorCPF.Valido("40000613134"));
-            Assert.IsTrue(ValidadorCPF.Valido("50025716115"));
-            Assert.IsTrue(ValidadorCPF.Valido("60092297668"));
-            Assert.IsTrue(ValidadorCPF.Valido("70005176115"));
-            Assert.IsTrue(ValidadorCPF.Valido("80099556120"));
-            Assert.IsTrue(ValidadorCPF.Valido("90082613168"));
+            Assert.IsTrue(ValidadorCPF.Valido("000.308.221-06"));
+            Assert.IsTrue(ValidadorCPF.Valido("010.077.261-72"));
+            Assert.IsTrue(ValidadorCPF.Valido("020.492.321-28"));
+            Assert.IsTrue(ValidadorCPF.Valido("030.329.721-24"));
+            Assert.IsTrue(ValidadorCPF.Valido("040.402.941-81"));
+            Assert.IsTrue(ValidadorCPF.Valido("051.131.408-64"));
+            Assert.IsTrue(ValidadorCPF.Valido("060.006.141-87"));
+            Assert.IsTrue(ValidadorCPF.Valido("070.041.333-20"));
+            Assert.IsTrue(ValidadorCPF.Valido("080.856.267-30"));
+            Assert.IsTrue(ValidadorCPF.Valido("090.063.156-21"));
+            Assert.IsTrue(ValidadorCPF.Valido("100.204.891-53"));
+            Assert.IsTrue(ValidadorCPF.Valido("200.415.941-34"));
+            Assert.IsTrue(ValidadorCPF.Valido("300.517.541-34"));
+            Assert.IsTrue(ValidadorCPF.Valido("400.006.131-34"));
+            Assert.IsTrue(ValidadorCPF.Valido("500.257.161-15"));
+            Assert.IsTrue(ValidadorCPF.Valido("600.922.976-68"));
+            Assert.IsTrue(ValidadorCPF.Valido("700.051.761-15"));
+            Assert.IsTrue(ValidadorCPF.Valido("800.995.561-20"));
+            Assert.IsTrue(ValidadorCPF.Valido("900.826.131-68"));
         }
 
         [TestMethod]

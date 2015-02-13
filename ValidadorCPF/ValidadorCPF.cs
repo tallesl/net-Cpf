@@ -7,16 +7,22 @@ namespace ValidacaoCPF
     {
         public static bool Valido(string numero)
         {
-            if (
-                (string.IsNullOrWhiteSpace(numero) || (numero.Length != 11 && numero.Length != 14)) ||
-                (numero.Length == 12 && !ApenasDigitos(numero)) ||
-                (numero.Length == 15 && !ApenasDigitosEMascara(numero))
-            )
+            if (string.IsNullOrWhiteSpace(numero) || (numero.Length != 11 && numero.Length != 14))
+            {
+                return false;
+            }
+            else if (numero.Length == 14 && !MascaraCorreta(numero))
             {
                 return false;
             }
             else
             {
+                numero = ApenasDigitos(numero);
+                if (numero.Length != 11)
+                {
+                    return false;
+                }
+
                 var verificadores = numero.Substring(9, 2);
 
                 var digitos = numero.Substring(0, 9);
@@ -34,31 +40,14 @@ namespace ValidacaoCPF
             }
         }
 
-        private static bool ApenasDigitos(string numero)
+        private static string ApenasDigitos(string numero)
         {
-            return numero.Any(digito => digito < '0' || digito > '9');
+            return new string(numero.Where(digito => digito >= '0' && digito <= '9').ToArray());
         }
 
-        private static bool ApenasDigitosEMascara(string numero)
+        private static bool MascaraCorreta(string numero)
         {
-            for (var i = 0; i < numero.Length; ++i)
-            {
-                if (
-
-                    // Verificando ponto
-                    ((i == 3 || i == 7) && numero[i] != '.') ||
-
-                    // Verificando traço
-                    (i == 11 && numero[i] != '-') ||
-
-                    // Verificando dígitos
-                    (numero[i] < '0' || numero[i] > '9')
-                )
-                {
-                    return false;
-                }
-            }
-            return true;
+            return numero[3] == '.' && numero[7] == '.' && numero[11] == '-';
         }
 
         private static char Mod11(string numero)
@@ -69,10 +58,8 @@ namespace ValidacaoCPF
             {
                 soma += digitos[i] * multiplicador;
             }
-
             var mod11 = soma % 11;
-            if (mod11 < 2) return '0';
-            else return (11 - mod11).ToString()[0];
+            return mod11 < 2 ? '0' : (11 - mod11).ToString()[0];
         }
 
         private static IEnumerable<int> ObterDigitos(string numero)
