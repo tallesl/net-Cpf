@@ -1,3 +1,9 @@
+<p align="center">
+    <a href="#validador-cpf">
+        <img alt="logo" src="logo/200x160.png">
+    </a>
+</p>
+
 # Validador CPF
 
 [![build](https://ci.appveyor.com/api/projects/status/ryvx5c1l0pgoesn9)](https://ci.appveyor.com/project/TallesL/validadorcpf)
