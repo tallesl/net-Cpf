@@ -1,9 +1,8 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidadorCPF", "ValidadorCPF\ValidadorCPF.csproj", "{A909F0B6-713A-45E0-88D4-B34C78E8B58C}"
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{A909F0B6-713A-45E0-88D4-B34C78E8B58C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidadorCPF.Teste", "ValidadorCPF.Teste\ValidadorCPF.Teste.csproj", "{65E08FCA-B056-4EDD-9A59-252752A280FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{65E08FCA-B056-4EDD-9A59-252752A280FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

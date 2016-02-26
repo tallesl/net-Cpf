@@ -1,21 +1,26 @@
 <p align="center">
-    <a href="#validador-cpf">
-        <img alt="logo" src="logo/200x160.png">
+    <a href="#cpf">
+        <img alt="logo" src="Assets/logo.png">
     </a>
 </p>
 
-# Validador CPF
+# Cpf
 
-[![build](https://ci.appveyor.com/api/projects/status/ryvx5c1l0pgoesn9)](https://ci.appveyor.com/project/TallesL/validadorcpf)
-[![nuget package](https://badge.fury.io/nu/ValidadorCPF.png)](http://badge.fury.io/nu/ValidadorCPF)
+Performs a digit check on Brazilian Individual Taxpayer Registry ([CPF]).
 
-*Performs a digit check on Brazilian Individual Taxpayer Registry ([CPF](http://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas)).*
+[build]:     https://ci.appveyor.com/project/TallesL/net-Cpf
+[build-img]: https://ci.appveyor.com/api/projects/status/github/tallesl/net-Cpf?svg=true
+[nuget]:     https://www.nuget.org/packages/Cpf
+[nuget-img]: https://badge.fury.io/nu/Cpf.svg
+[CPF]:       http://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas
+
+## Usage
 
 ```cs
-using ValidacaoCPF;
+using CpfLibrary;
 
-ValidadorCPF.Valido("29594421134"); // True
-ValidadorCPF.Valido("488.081.131-91"); // True
-ValidadorCpf.Valido("00000000000"); // False
-ValidadorCpf.Valido("lol"); // False
+Cpf.Check("29594421134");    // True
+Cpf.Check("488.081.131-91"); // True
+Cpf.Check("00000000000");    // False
+Cpf.Check("lol");            // False
 ```
