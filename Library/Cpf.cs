@@ -1,5 +1,6 @@
 ﻿namespace CpfLibrary
 {
+    using System.Globalization;
     using System.Linq;
 
     public static class Cpf
@@ -49,10 +50,10 @@
             var sum = 0;
 
             for (int i = number.Length - 1, multiplier = 2; i >= 0; --i, ++multiplier)
-                sum += int.Parse(number[i].ToString()) * multiplier;
+                sum += int.Parse(number[i].ToString(), CultureInfo.InvariantCulture) * multiplier;
 
             var mod11 = sum % 11;
-            return mod11 < 2 ? '0' : (11 - mod11).ToString()[0];
+            return mod11 < 2 ? '0' : (11 - mod11).ToString(CultureInfo.InvariantCulture)[0];
         }
     }
 }
