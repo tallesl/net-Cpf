@@ -6,6 +6,9 @@
 
 # Cpf
 
+[![][build-img]][build]
+[![][nuget-img]][nuget]
+
 Performs a digit check on Brazilian Individual Taxpayer Registry ([CPF]).
 
 [build]:     https://ci.appveyor.com/project/TallesL/net-Cpf
