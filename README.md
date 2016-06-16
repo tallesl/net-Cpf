@@ -28,5 +28,5 @@ Cpf.Check("00000000000");    // False
 Cpf.Check("lol");            // False
 
 Cpf.Format("29594421134"); // "295.944.211-34"
-Cpf.Format("lol"); // "lol"
+Cpf.Format("lol");         // "lol"
 ```
