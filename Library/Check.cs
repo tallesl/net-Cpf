@@ -3,8 +3,16 @@
     using System.Globalization;
     using System.Linq;
 
+    /// <summary>
+    /// Digit check and formatting on Brazilian Individual Taxpayer Registry (CPF).
+    /// </summary>
     public static partial class Cpf
     {
+        /// <summary>
+        /// Performs a digit check on the given number.
+        /// </summary>
+        /// <param name="number">Number to check</param>
+        /// <returns>True if it's a valid CPF, false otherwise</returns>
         public static bool Check(string number)
         {
             // if it's empty or the length is not 11 (number without mask) or 14 (number with mask) it's invalid

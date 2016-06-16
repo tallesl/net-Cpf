@@ -5,6 +5,11 @@
 
     public static partial class Cpf
     {
+        /// <summary>
+        /// Formats the given string with CPF mask.
+        /// </summary>
+        /// <param name="s">string to format</param>
+        /// <returns>The formatted string if the formatting was sucessful, the original string if not</returns>
         public static string Format(string s)
         {
             return s == null || s.Length != 11 || s.Any(c => !char.IsDigit(c)) ? s :
