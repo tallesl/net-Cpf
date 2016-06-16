@@ -3,7 +3,7 @@
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
-    public class Tests
+    public class CheckTests
     {
         [TestMethod]
         public void Invalid()
@@ -27,7 +27,7 @@
         }
 
         [TestMethod]
-        public void WithMask()
+        public void ValidWithMask()
         {
             Assert.IsTrue(Cpf.Check("000.308.221-06"));
             Assert.IsTrue(Cpf.Check("010.077.261-72"));
@@ -51,7 +51,7 @@
         }
 
         [TestMethod]
-        public void WithoutMask()
+        public void ValidWithoutMask()
         {
             Assert.IsTrue(Cpf.Check("00030822106"));
             Assert.IsTrue(Cpf.Check("00031517862"));

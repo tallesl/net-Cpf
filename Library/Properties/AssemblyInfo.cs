@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Cpf")]
-[assembly: AssemblyDescription("Performs a digit check on Brazilian Individual Taxpayer Registry (CPF).")]
+[assembly: AssemblyDescription("Digit check and formatting on Brazilian Individual Taxpayer Registry (CPF).")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("")]

@@ -3,7 +3,7 @@
     using System.Globalization;
     using System.Linq;
 
-    public static class Cpf
+    public static partial class Cpf
     {
         public static bool Check(string number)
         {
